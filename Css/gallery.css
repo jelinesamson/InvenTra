@@ -1,0 +1,124 @@
+D:root {
+    --title-color: #48cae4;
+    --highlight-color: #023e8a;
+    --bg-color: #ffffff;
+    --box-bg: #e2e8f0;
+}
+
+body {
+    font-family: system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    background-color: var(--bg-color);
+    padding-top: 40px;
+    overflow-x: hidden;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: 20px auto 0;
+    padding: 0 20px 60px 20px;
+}
+
+.header-section {
+    padding: 20px 0 60px 0;
+}
+
+.gallery-title {
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: var(--title-color);
+    letter-spacing: -0.02em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 30px rgba(13, 74, 45, 0.1);
+}
+
+.scroll-instruction {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.scroll-instruction::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--highlight-color);
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.masonry-container {
+    column-count: 3;
+    column-gap: 24px;
+    width: 100%;
+}
+
+.masonry-item {
+    background-color: var(--box-bg);
+    border-radius: 20px;
+    margin-bottom: 24px;
+    break-inside: avoid;
+    width: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    /* Blue scroll line hint */
+    border-radius: 6px;
+    border: 3px solid #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .masonry-container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-section {
+        padding: 20px 0 40px 0;
+    }
+
+    .gallery-title {
+        font-size: 2.5rem;
+    }
+
+    .masonry-container {
+        column-count: 1;
+    }
+}

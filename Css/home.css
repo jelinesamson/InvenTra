@@ -1,0 +1,31 @@
+.hero-section {
+  background-color: #ffff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.hero-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container {
+  padding-top: 70px;
+}
+
+.text-tittle {
+  color: #48cae4;
+}
+
+.quote {
+  color: #023e8a;
+}
+
+.inv-img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+.text-shadow {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}

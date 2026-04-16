@@ -1,0 +1,163 @@
+.nav-tittle {
+  font-size: 30px;
+  color: #48cae4;
+  text-decoration: none;
+}
+
+.nav-custom {
+  background-color: #f8f9fa;
+}
+
+.nav-custom .nav-link {
+  color: #023e8a !important;
+  letter-spacing: 2px;
+}
+
+.nav-custom .nav-link.active {
+  color: #03045e !important;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #48cae4 !important;
+}
+
+.glass-modal {
+  background: rgba(197, 197, 198, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  color: #111827;
+}
+
+.glass-modal .modal-header {
+  border-bottom: none;
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+.glass-modal .modal-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #111827;
+}
+
+.glass-modal .modal-body {
+  padding: 1rem 1.5rem 1.25rem;
+}
+
+.glass-modal .form-label {
+  font-size: 0.85rem;
+  color: #363636;
+  margin-bottom: 0.25rem;
+}
+
+.glass-modal .form-control {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #1f2937;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.glass-modal .form-control::placeholder {
+  color: #6b7280 !important;
+  opacity: 1 !important;
+}
+
+.glass-modal .form-control::-webkit-input-placeholder {
+  color: #6b7280;
+}
+.glass-modal .form-control:-ms-input-placeholder {
+  color: #6b7280;
+}
+
+.glass-modal .form-control:focus {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: #444444;
+  box-shadow: none;
+  color: #111827;
+}
+
+.glass-modal .btn-success {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.glass-modal .btn-success:hover {
+  filter: brightness(1.05);
+}
+
+.glass-modal .btn-close {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+.glass-modal .btn-close:hover {
+  opacity: 1;
+}
+
+.glass-modal a {
+  text-decoration: none;
+}
+
+.glass-modal a:hover {
+  text-decoration: underline;
+}
+
+.glass-modal .small {
+  font-size: 0.8rem;
+  color: #2a2b2c;
+}
+
+/* Hide browser default password toggle */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+
+/* Eye icon */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input {
+  padding-right: 40px; 
+}
+
+.input-wrapper .toggleEye {
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  color: #555;
+}
+
+.btnlog {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 0;
+  border-radius: 24px;
+  border: none;
+  background-color: #4f4b45;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.05s;
+}
+
+.btnlog:hover {
+  background-color: #3f3a34;
+}

@@ -1,0 +1,83 @@
+
+
+.main-content .container,
+.main-content .container-fluid {
+  margin-top: 30px;
+}
+
+h2 {
+  color: #2a5d9f;
+  font-weight: bold;
+}
+
+.table td .action-btns .btn {
+  min-width: 70px;  
+  height: 30px; 
+  font-size: 0.8rem;
+  padding: 2px 5px;
+}
+
+ table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.dataTables_filter input {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.dt-button {
+  background-color: #2a5d9f !important;
+  color: white !important;
+  border-radius: 5px !important;
+  border: none !important;
+}
+
+.dt-button-collection {
+  position: fixed !important; 
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  min-width: 180px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  z-index: 20000 !important; 
+  padding: 10px 0;
+}
+
+.dt-button-collection button {
+  display: block !important;
+  width: 100% !important;
+  margin: 3px 0 !important;
+  text-align: center;
+  border: none !important;
+  border-radius: 3px !important;
+  background: #2a5d9f !important;
+  color: white !important;
+  padding: 6px 0 !important;
+}
+
+.dt-button-collection button:hover {
+  background: #1e3c72 !important;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after {
+  display: none !important;
+}

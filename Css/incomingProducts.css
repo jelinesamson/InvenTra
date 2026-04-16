@@ -1,0 +1,16 @@
+.incoming-page .table-responsive {
+  min-height: 320px;
+}
+
+.incoming-page .table th,
+.incoming-page .table td {
+  vertical-align: middle;
+}
+
+.incoming-page #incomingSearch {
+  max-width: 500px;
+}
+
+.incoming-page .modal .form-label {
+  font-weight: 600;
+}
